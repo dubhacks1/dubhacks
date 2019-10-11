@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="High School Hackathons in Bay Area">
+    <meta name="author" content="Dub Hacks">
+
+    <title>Dub Hacks</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+    <style type="text/css" id="custom-fonts">
+    @font-face {font-family: 'Roboto Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');}
+    @font-face {font-family: 'Roboto Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');}
+    @font-face {font-family: 'Roboto Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');}
+    @font-face {font-family: 'Apercu Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');}
+    @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
+    @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
+    @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    </style>
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll text-center" href="#page-top">
+          <span class="hidden-xs hidden-sm "><span class="light">Dub Hacks</span> Hackathon</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#page-top">Home</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About Us</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#generalRules">Rules</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#agenda">Agenda</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#Prizes">Prizes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <h1 class="brand-heading">Dub Hacks</h1>
+              <p class="intro-text">A Hackathon Optimized to its extent for High Schoolers</p>
+              <p>
+                <a class="button2" href="https://dubhacks1.typeform.com/to/BfQH0K">
+                  Register
+                </a>
+              <p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="darker-black content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>About Us</h2>
+          <p>
+            Dub Hacks is a two-day, 200-participant Hackathon that is independent and unaffiliated with any school. Our goal is to bring high school students in the Bay Area together to come together and develop revolutionary ideas that could change the world. At Dub Hacks, we provide students with the resources and help that would be needed to make their ideas into a reality. Additionally, by the end of the Hackathon, students will be able to learn how to collaborate with their peers to build STEM projects, gain communication skills, and be inspired to continue doing things they love! Food, workshops, drinks, and swag will be provided to all participants for free! We want all participants to enjoy their weekend at Dub Hacks, hence, we would encourage everybody to arrive to the Hackathon with a competitive mindset.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Agenda</h2>
+            <p>Feburary 15-16, 2020</p>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">8:30 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Check-in</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:00 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Opening Ceremony Begins</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:15 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Keynote Speech</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:30 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Hacking Begins</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">10:00 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Workshop #1</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">12:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Lunch from Chipotle</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">2:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Workshop #2</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">3:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Snacks</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">5:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Workshop #3</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">7:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Dinner from Panda Express</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">8:30 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Workshop #4</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:30 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Boba Run(bring $5 - $7 cash)</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">11:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Super Smash Bros Tournament</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">12:00 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Midnight Snack</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">8:00 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Breakfast</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:30 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Workshop #5</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">10:30 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Submissions due on Shawee.io</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">11:00 AM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Judging</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">12:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Lunch from Taco Bell</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">1:00 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Closing Ceremony/Awards</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">1:30 PM</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">End of Dub Hacks #1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="generalRules" class="darker-black content-section text-left ">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 style="text-align:center;">Rules</h2>
+            <p></p>
+            <p>1. Teams must Be comprised of 1-4 people</p>
+            <br>
+            <p>2. All work on a project should be done at the hackathon if you are caught with pre-coded work then you may be kicked out for the remainder of the hackathon</p>
+            <br>
+            <p>3. Teams can use an idea they had before the event</p>
+            <br>
+            <p>4. Teams can use libraries, frameworks, or open-source code in their projects. Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed</p>
+            <br>
+            <p>5. Teams can work on an idea that they have worked on before (as long as they do not re-use code)</p>
+            <br>
+            <p>6. Adding new features to existing projects is allowed. Judges will only consider new functionality introduced or new features added during the hackathon in determining the winners.</p>
+            <br>
+            <p>7. Teams must stop hacking once the time is up. However, teams are allowed to debug and make small fixes to their programs after time is up. e.g. If during demoing your hack you find a bug that breaks your application and the fix is only a few lines of code, it's okay to fix that. Making large changes or adding new features is not allowed</p>
+            <br>
+            <p>8. Teams can be disqualified from the competition at the organizers' discretion</p>
+            <br>
+          </div>
+        </div>
+      </div><
+    </section>
+    <section id="Prizes" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Prizes</h2>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">1st Place</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Gaming Laptops</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">2nd Place</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Nintendo Switches</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">3rd Place</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Apple Airpods</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">Best Hardware Hack</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Rasberry Pi Kits</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">Best use of Google API</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Google Cardboard VR</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">Best Mobile App</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">$25 Apple Gift Cards</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">Best UI</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Bluetooth Speakers</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">Best Beginner Hack</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Basic Starter Arduino Kits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="darker-black container content-section text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <a href = "mailto:dubhacks1@gmail.com">
+            <i class="fa fa-envelope fa-5x" style="color:white;"></i>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href = "https://www.instagram.com/dubhacksbayarea/">
+              <i class="fab fa-instagram fa-5x" style="color:white;"></i>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href = "https://www.discord.gg">
+            <i class="fab fa-discord fa-5x" style="color:white;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Dub Hacks 2019</p>
+      </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
+  </body>
+</html>
