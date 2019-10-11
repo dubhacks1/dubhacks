@@ -181,11 +181,7 @@ a:focus {
 .intro {
   height: 100%;
   background-size: cover;
-  background:
-    linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
-    ), url(../img/head-featured-bg.jpg) center center ;
+  background-color:#27292b;
 
   background-repeat: no-repeat;
   width: 100%;
