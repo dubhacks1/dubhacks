@@ -166,7 +166,7 @@ a:focus {
 .intro {
   /* height: 120%; */
   padding-bottom: 10%;
-  background: linear-gradient( rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.95) 100% ) , url("https://i2.wp.com/generalassemb.ly/blog/wp-content/uploads/2014/07/8812567121_f31c46101c_z.jpg?ssl=1");
+  background: linear-gradient( rgba(31, 31, 31, 0.95) 0%, rgba(31, 31, 31, 0.95) 100% ) , url("https://i2.wp.com/generalassemb.ly/blog/wp-content/uploads/2014/07/8812567121_f31c46101c_z.jpg?ssl=1");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
