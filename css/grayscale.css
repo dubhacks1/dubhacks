@@ -3,28 +3,13 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
- .button2 {
-     -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     display: block;
-     margin: 20px auto;
-     max-width: 180px;
-     text-decoration: none;
-     border-radius: 4px;
-     padding: 20px 30px;
-     color: rgba(30, 22, 54, 0.6);
-     box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
- }
- .button2:hover {
-     color: rgba(255, 255, 255, 0.85);
-     box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
- }
  .bg-primary {
  background-color: #000 !important;
 }
+
+/* .panel {
+    padding-top: 10px;
+} */
 
 .bg-circle
 {
@@ -179,11 +164,12 @@ a:focus {
   }
 }
 .intro {
-  height: 100%;
-  background-size: cover;
-  background-color:#27292b;
-
+  /* height: 120%; */
+  padding-bottom: 10%;
+  background: linear-gradient( rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.95) 100% ) , url("https://i2.wp.com/generalassemb.ly/blog/wp-content/uploads/2014/07/8812567121_f31c46101c_z.jpg?ssl=1");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 615px;
   text-align: center;
@@ -198,8 +184,17 @@ a:focus {
 .intro .intro-body {
   margin-top: 150px;
 }
+
+.brand-heading {
+    font-family: 'Racing Sans One', cursive;
+    color: #0490de;
+    text-shadow: 2px 2px 2px 1px red;
+    line-height: 0.25;
+}
+
 .intro .intro-body .brand-heading {
-  font-size: 60px;
+  font-size: 80px;
+  /* font-family: 'Rammetto One' , cursive; */
 }
 .intro .intro-body .intro-text {
   margin-top: 50px;

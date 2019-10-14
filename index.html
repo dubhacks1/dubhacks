@@ -7,15 +7,17 @@
     <meta name="description" content="High School Hackathons in Bay Area">
     <meta name="author" content="Dub Hacks">
 
-    <title>Dub Hacks</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One|Racing+Sans+One|Rammetto+One&display=swap" rel="stylesheet">
 
+    <title>Dub Hacks</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 
@@ -36,6 +38,11 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <script>
+        AOS.init({
+            once:true
+        });
+    </script>
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -56,6 +63,9 @@
               <a class="page-scroll" href="#page-top">Home</a>
             </li>
             <li>
+              <a class="page-scroll" href="#FAQ">FAQ</a>
+            </li>
+            <li>
               <a class="page-scroll" href="#about">About Us</a>
             </li>
             <li>
@@ -72,19 +82,44 @@
       </div>
     </nav>
 
-    <header class="intro">
+    <header class="intro" >
       <div class="intro-body">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-12">
-              <h1 class="brand-heading">Dub Hacks</h1>
-              <p class="intro-text">A Hackathon Optimized to its extent for High Schoolers</p>
-              <p>
-                <a class="button2" href="https://dubhacks1.typeform.com/to/BfQH0K">
-                  Register
-                </a>
-              <p>
-              <a href="#about" class="btn btn-circle page-scroll">
+              <h1 class="brand-heading" style="color: #0490de; text-shadow: 4px 2px red; position: relative; z-index: 1; font-size: 100px;">Dub </h1>
+              <h1 class="brand-heading" style="color: #0490de; text-shadow: 2px 4px red; position: relative; z-index: 0; font-size: 95px;"> <em style="visibility: hidden; font-size: 30px;">.</em> Hacks</h1>
+              <p class="intro-text">6600 Dumbarton Cir, Fremont, CA 94555</p>
+              <p class="intro-text">Feburary 15-16</p>
+              <style>
+                .button2 {
+                    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                    display: block;
+                    margin: 20px auto;
+                    max-width: 180px;
+                    text-decoration: none;
+                    border: 1px solid rgba(255, 255, 255);
+                    border-radius: 4px;
+                    padding: 20px 30px;
+                    color: rgba(255, 255, 255);
+                    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+                }
+                .button2:hover {
+                    color: rgba(255, 255, 255);
+                    box-shadow: rgb(4,144,222) 0 80px 0px 2px inset;
+                    border: 1px solid rgb(4,144,222);
+                }
+
+            </style>
+
+                <p style="text-align:center;">
+                    <a href="https://dubhacks1.typeform.com/to/BfQH0K" class="button2" style="text-decoration: none;">Register</a>
+                </p>
+              <a href="#FAQ" class="btn btn-circle page-scroll">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -92,8 +127,103 @@
         </div>
       </div>
     </header>
+    <section id="FAQ" class="content-section text-center" data-aos="fade-up" data-aos-duration="1500">
+        <style>
+        .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        }
 
-    <section id="about" class="darker-black content-section text-center">
+        .activee, .accordion:hover {
+        background-color: #ccc;
+        }
+
+        .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        }
+
+        .activee:after {
+        content: "\2212";
+        }
+
+        .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        }
+        </style>
+        </head>
+        <body>
+
+        <h2>FAQ</h2>
+        <div style="margin-left: 5%; width: 90%;">
+
+        <button class="accordion">What is a Hackathon?</button>
+        <div class="panel">
+        <p>A hackathon is a competition in which people participate in groups to program a project from scratch. Hackathons can be anywhere from 12 - 48 hours. Online hackathons can be anywhere from 12 hours to 1 year. </p>
+        </div>
+
+        <button class="accordion">Who can attend a hackathon?</button>
+        <div class="panel">
+        <p>Since Dub Hacks is a high school hackathon anyone from grades 9-12 can participate but anyone older is welcome to sign up as a mentor and/or judge </p>
+        </div>
+
+        <button class="accordion">Do I need to have programming experience?</button>
+        <div class="panel">
+        <p>NO, you do not have to have to have programming experience because we as organizers will be hosting educational workshops throughout the day to help you learn programming. We want everyone that participates to have a good time and learn something new. If you are intersted in the hackathon but dont like to code then you could be the speaker during the judging time for your team</p>
+        </div>
+
+        <button class="accordion">How much do I have to pay to attend a hackathon?</button>
+        <div class="panel">
+        <p>Its FREE because our sponors/donators cover the cost of absolutely everything</p>
+        </div>
+
+        <button class="accordion">What should I bring?</button>
+        <div class="panel">
+        <p>All you need to bring is a laptop to work on, a student ID from your school, toiletries, and any accessories you might want (headphones, chargers, cool hardware to work with, etc). We will provide the food, swag, prizes, and mentors for free!</p>
+        </div>
+
+        <button class="accordion">How many people can be on a team?</button>
+        <div class="panel">
+        <p>teams can be a maximum of 4 people. Solo teams are allowed, but we strongly encourage you to meet new people if you come by yourself! On the other hand, if you are a team of 2 or 3, one of the best things you can do is invite someone new to join your team - they will bring in new ideas and areas of expertise. At the beginning of the event, we will do our best to help everyone find a team.</p>
+        </div>
+
+       <button class="accordion">What can I get from coming?</button>
+        <div class="panel">
+        <p>In addition to a fun and unique experience to improve your maker skills with your friends, we will have amazing prizes for our best submissions! And even if you don't end up winning, everyone will get free food and swag, including T-shirts, laptop stickers, and various goodies from our sponsors!</p>
+        </div>
+
+        <button class="accordion">Why should I attend a hackathon and why is it useful for my future in STEM?</button>
+        <div class="panel">
+        <p>You have an oppurtunity to have fun and work with friends for 24 hours while building your skills in programming and we also provide lots and lots of FREE STUFF. You will also make lots of connections at the hackathon which would be important for your future such as meeting judges from the CS industry and some of our judges are VPs and CEOs of tech companies./</p>
+        </div>
+
+        <button class="accordion">What if I have more questions?</button>
+        <div class="panel">
+        <p>Join our discord:
+        <a href="https://discord.gg/2wD35Xe">
+        https://discord.gg/2wD35Xe
+        </a>
+         and we will be happy to answer more questions there. If you don't want to communicate via discord then please email us at <a href="mailto:dubhacks1@gmail.com"> dubhacks1@gmail.com</a>
+        </p>
+        </div>
+        </div>
+    </section>
+    <section id="about" class="darker-black content-section text-center" data-aos="fade-up" data-aos-duration="1500">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>About Us</h2>
@@ -103,8 +233,10 @@
         </div>
       </div>
     </section>
+    <section>
 
-    <section id="agenda" class="content-section text-center">
+    </section>
+    <section id="agenda" class="content-section text-center" data-aos="fade-up" data-aos-duration="1500">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
@@ -179,7 +311,7 @@
             <div class="agenda">
               <div class="row">
                 <div class="when col-lg-6 col-md-6 col-sm-6 col-xs-6">9:30 PM</div>
-                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Boba Run(bring $5 - $7 cash)</div>
+                <div class="what col-lg-6 col-md-6 col-sm-6 col-xs-6">Boba Run bring $5 - $7 cash</div>
               </div>
             </div>
             <div class="agenda">
@@ -240,7 +372,7 @@
         </div>
       </div>
     </section>
-    <section id="generalRules" class="darker-black content-section text-left ">
+    <section id="generalRules" class="darker-black content-section text-left " data-aos="fade-up" data-aos-duration="1500">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
@@ -254,7 +386,7 @@
             <br>
             <p>4. Teams can use libraries, frameworks, or open-source code in their projects. Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed</p>
             <br>
-            <p>5. Teams can work on an idea that they have worked on before (as long as they do not re-use code)</p>
+            <p>5. Teams can work on an idea that they have worked on before as long as they do not re-use code.</p>
             <br>
             <p>6. Adding new features to existing projects is allowed. Judges will only consider new functionality introduced or new features added during the hackathon in determining the winners.</p>
             <br>
@@ -266,7 +398,7 @@
         </div>
       </div><
     </section>
-    <section id="Prizes" class="content-section text-center">
+    <section id="Prizes" class="content-section text-center" data-aos="fade-up" data-aos-duration="1500">
       <div class="download-section">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
@@ -323,7 +455,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="darker-black container content-section text-center">
+    <section id="contact" class="darker-black container content-section text-center" data-aos="fade-up" data-aos-duration="1500">
       <div class="row">
         <div class="col-md-4">
           <a href = "mailto:dubhacks1@gmail.com">
@@ -336,13 +468,13 @@
           </a>
         </div>
         <div class="col-md-4">
-          <a href = "https://www.discord.gg">
+          <a href = "https://discord.gg/2wD35Xe">
             <i class="fab fa-discord fa-5x" style="color:white;"></i>
           </a>
         </div>
       </div>
     </section>
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="1500">
       <div class="container text-center">
         <p>Copyright &copy; Dub Hacks 2019</p>
       </div>
@@ -352,5 +484,6 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/grayscale.min.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
