@@ -172,7 +172,7 @@ a:focus {
     top: 0;
     right: 0;
     left: 0;
-    height: 125%;
+    height: 170%;
     z-index: 0;
     background-color: black;
 }
@@ -190,6 +190,9 @@ a:focus {
 @media (max-width: 767px) {
   .intro {
     padding-top: 100px;
+  }
+  #particles-js {
+      height: 140%;
   }
 }
 .intro .intro-body {
