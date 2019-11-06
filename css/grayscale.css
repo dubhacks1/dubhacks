@@ -162,9 +162,12 @@ a:focus {
     background: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+  #particles-js {
+      height: 140%;
+  }
 }
 #particles-js {
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -192,8 +195,20 @@ a:focus {
     padding-top: 100px;
   }
   #particles-js {
-      height: 140%;
+      height: 120%;
   }
+}
+
+@media (min-width: 1210px) {
+    #particles-js {
+        height: 130%;
+    }
+}
+
+@media (min-width: 1910px) {
+    #particles-js {
+        height: 120%;
+    }
 }
 .intro .intro-body {
   margin-top: 150px;
